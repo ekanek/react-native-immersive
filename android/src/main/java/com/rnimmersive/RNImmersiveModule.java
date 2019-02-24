@@ -25,7 +25,8 @@ public class RNImmersiveModule extends ReactContextBaseJavaModule {
   private static final int UI_FLAG_IMMERSIVE = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
     | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
+    // remove it as i need to show navigation bar transparent at bottom
+    // | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
     | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
     | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 
