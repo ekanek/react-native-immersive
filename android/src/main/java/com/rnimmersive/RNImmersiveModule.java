@@ -135,7 +135,7 @@ public class RNImmersiveModule extends ReactContextBaseJavaModule {
         @Override
         public void run() {
           _isImmersiveOn = isOn;
-          activity.getWindow().setNavigationBarColor(isOn ? Color.argb(0.3f, 0.0f, 0.0f, 0.0f): Color.argb(1,244,246,248));
+          activity.getWindow().setNavigationBarColor(isOn ? Color.argb(0.3f, 0.0f, 0.0f, 0.0f): Color.rgb(244,246,248));
           activity.getWindow().getDecorView()
               .setSystemUiVisibility(isOn ? UI_FLAG_PARTIAL_IMMERSIVE : View.SYSTEM_UI_FLAG_VISIBLE);
           res.resolve(null);
